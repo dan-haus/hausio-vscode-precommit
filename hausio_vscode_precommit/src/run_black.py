@@ -3,8 +3,9 @@ import subprocess
 import sys
 
 
-def main(args):
-    new_args = ["python3", "-m", "flake8"]
+def main():
+    args = sys.argv[1:]
+    new_args = ["python3", "-m", "black"]
     new_args.extend(args)
     
     results = subprocess.run(new_args, 
@@ -24,4 +25,4 @@ def main(args):
 
 
 if __name__ == "__main__":
-    main(sys.argv[1:])
+    main()

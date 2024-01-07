@@ -1,5 +1,5 @@
 [tool.poetry]
-name = "hausio-vscode-precommit"
+name = "hausio_vscode_precommit"
 version = "0.1.0"
 description = "Pre-commit hooks that allow for vs-code auto formatters to pre-commit to the same results"
 authors = ["Daniel Walt <dan@haus.io>"]
@@ -11,6 +11,10 @@ flake8 = "^7.0.0"
 black = "^23.12.1"
 isort = "^5.13.2"
 
+[tool.poetry.scripts]
+run_black = "hausio_vscode_precommit.src.run_black:main"
+run_flake8 = "hausio_vscode_precommit.src.run_flake8:main"
+run_isort = "hausio_vscode_precommit.src.run_isort:main"
 
 [build-system]
 requires = ["poetry-core"]

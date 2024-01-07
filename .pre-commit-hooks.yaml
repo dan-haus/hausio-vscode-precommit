@@ -1,17 +1,17 @@
 - id: hausio-py-flake8
   name: run flake8 7.0.0
-  entry: ./run_flake8.py
+  entry: run_flake8
   language: python
   types: [python]
 
 - id: hausio-py-black
   name: run black 23.12.1
-  entry: ./run_black.py
+  entry: run_black
   language: python
   types: [python]
 
 - id: hausio-py-isort
   name: run isort 5.13.2
-  entry: ./run_isort.py
+  entry: run_isort
   language: python
   types: [python]
