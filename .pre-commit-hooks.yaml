@@ -1,0 +1,5 @@
+- id: hausio-py-flake8
+  name: run flake8 7.0.0
+  entry: ./run_flake8.py
+  language: python
+  types: [python]

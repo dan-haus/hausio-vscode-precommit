@@ -1,0 +1,17 @@
+[tool.poetry]
+name = "hausio-vscode-precommit"
+version = "0.1.0"
+description = "Pre-commit hooks that allow for vs-code auto formatters to pre-commit to the same results"
+authors = ["Daniel Walt <dan@haus.io>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.11"
+flake8 = "^7.0.0"
+black = "^23.12.1"
+isort = "^5.13.2"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
