@@ -3,3 +3,15 @@
   entry: ./run_flake8.py
   language: python
   types: [python]
+
+- id: hausio-py-black
+  name: run black 23.12.1
+  entry: ./run_black.py
+  language: python
+  types: [python]
+
+- id: hausio-py-isort
+  name: run isort 5.13.2
+  entry: ./run_isort.py
+  language: python
+  types: [python]
